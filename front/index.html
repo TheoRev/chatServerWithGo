@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChatWithGo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="" class="container">
+        <div id="registro" class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form id="frmRegistro">
+                    <div class="card text-white bg-info formulario">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <label for="">Username:</label>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" name="user_name" id="user_name" class="form-control">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="submit" value="Ingresar" class="btn btn-success">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div id="chat" class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form id="frmChat">
+                    <div class="container">
+                        <div class="card text-white bg-warning chat">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <textarea name="chat_area" id="chat_area" cols="30" rows="10" class="form-control"></textarea>
+                                    <br>
+                                    <input type="text" name="msg" id="msg" class="form-control" autofocus>
+                                    <br>
+                                    <input type="submit" id="send" name="send" value="ENVIAR" class="btn btn-primary btn-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/server.js"></script>
+</body>
+
+</html>
